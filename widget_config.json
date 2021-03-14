@@ -1,0 +1,28 @@
+{
+	"title":"Form",
+	"location":"form",
+	"id":"widget_form",
+	"description":"A simple form submission widget with sensible defaults",
+	"fields":[
+		{
+			"name":"form_location",
+			"id":"form_location",
+			"type":"Text",
+			"label":"Form JSON Location",
+			"required":true,
+			"minlength":3,
+			"filter":"TEXT",
+			"description":"Path is relative to /widgets/form location"
+		},
+		{
+			"name": "content_id",
+			"id": "content_id",
+			"type": "Pageselector",
+			"label": "Thank You Page",
+			"required": true,
+			"description": "Essential for analytics",
+			"filter": "ARRAYOFINT",
+			"multiple":false
+		}
+	]
+}

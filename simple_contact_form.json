@@ -1,0 +1,37 @@
+{
+	"title":"Simple Contact Form",
+	"id":"widget_html_options",
+	"fields":[
+		{
+			"name":"name",
+			"id":"name",
+			"type":"Text",
+			"label":"Name",
+			"required":true,
+            "filter":"STRING",
+            "minlength":3,
+            "maxlength":255
+        },
+        {
+			"name":"email",
+			"id":"email",
+			"type":"Text",
+			"label":"Email",
+			"required":true,
+            "filter":"EMAIL",
+            "minlength":3,
+            "maxlength":255,
+            "input_type":"email"
+		},
+		{
+			"type":"RecaptchaV2",
+			"name":"g-recaptcha-response"
+		},
+        {
+			"name":"submit",
+			"id":"submit",
+			"type":"HTML",
+			"html":"<div><button type='submit btn'>Submit</button></div>"
+		}
+	]
+}
